@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temperature ={
+        doC: 25,
+        setdoC: function(){
+            this.doC=parseInt(prompt("Nhap nhiet do"))
+        },
+        doF: function () {
+            return this.doC*9/5+32;
+        },
+        doK: function () {
+            return this.doC+273;
+        }
+    };
+    //Temperature.setdoC();
+    alert("do F = "+Temperature.doF()+","+"do K = "+ Temperature.doK());
+
+</script>
+
+</body>
+</html>
